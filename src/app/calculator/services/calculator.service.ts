@@ -9,7 +9,7 @@ const specialOperators = ['C', '+/-', '%', '=', 'Backspace', '.'];
 })
 export class CalculatorService {
   public resultText = signal('0');
-  public subResultText = signal('10');
+  public subResultText = signal('0');
   public lastOperator = signal('+');
 
   public constructNumber(value: string) {

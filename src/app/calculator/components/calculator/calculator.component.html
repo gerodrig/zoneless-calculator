@@ -1,10 +1,10 @@
 <div
-  class="w-screen h-40 bg-gradient-to-b from-gray-800 to-gray-700 flex items-end text-right"
+  class="flex items-end w-screen h-40 text-right bg-gradient-to-b from-gray-800 to-gray-700"
   style="max-width: 300px"
 >
-  <div class="w-full py-5 px-6 text-6xl text-white font-thin">
+  <div class="w-full px-6 py-5 text-6xl font-thin text-white">
     @if( subResultText() !== '0'){
-      <span class="text-4xl"> {{ subResultText() }} {{ lastOperator() }} </span>
+      <span id="sub-result" class="text-4xl"> {{ subResultText() }} {{ lastOperator() }} </span>
       <br />
     }
 
